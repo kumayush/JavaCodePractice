@@ -11,7 +11,9 @@ public class UniqueVowelCount {
 		for(char c:name.toCharArray()) {
 			if("aeiou".indexOf(c)!=-1) {
 				hs.add(c);
+				
 			}
+			
 		}
 		
 		System.out.println(hs);
