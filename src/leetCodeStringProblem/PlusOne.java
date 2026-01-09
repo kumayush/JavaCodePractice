@@ -21,10 +21,10 @@ public class PlusOne {
  
 	public static void main(String[] args) {
 		
-		int[] num= {9,9,9};
+		int[] num= {1,9,9};
 		PlusOne ps=new PlusOne();
-	int [] result=	ps.plusOne(num);
-	System.out.println(Arrays.toString(result));
+	int [] abc=	ps.plusOne(num);
+	System.out.println(Arrays.toString(abc));
 		
 		
 
