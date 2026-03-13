@@ -15,7 +15,7 @@ public class ExcelColumnNumber {
 		System.out.println("Number for Z: " + getColNumber("Z"));   // 26
         System.out.println("Number for AA: " + getColNumber("AA")); // 27
         System.out.println("Number for AZ: " + getColNumber("AZ")); // 52
-        System.out.println("Number for BA: " + getColNumber("BA")); // 53
+        System.out.println("Number for ABP: " + getColNumber("ABP")); // 53
         System.out.println("Number for A: " + getColNumber("A")); 
 
 	}

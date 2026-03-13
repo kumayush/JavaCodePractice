@@ -5,7 +5,7 @@ public class CompareTwoArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] a={1,2,3,3,5,8};
-		int[] b= {1,2,3,9,6,9};
+		int[] b= {1,2,3,3,5,8};
 		boolean res=true;
 		if (a.length==b.length) {
 			for(int i=0;i<a.length;i++) {

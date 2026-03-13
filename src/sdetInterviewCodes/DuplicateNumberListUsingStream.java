@@ -11,12 +11,12 @@ public class DuplicateNumberListUsingStream {
 
 	public static void main(String[] args) {
 		Integer[] original ={1,2,2,4,4,4,6};
+		int [] org= {1,2,2,4,4,4,6};
 	List<Integer> ls=	Arrays.asList(original);
 	Set<Integer> hs=new HashSet<>();
 	ls.stream().filter(n->!hs.add(n)).collect(Collectors.toSet());
 	
 	System.out.println(hs);
 	
-
 	}
 	}

@@ -10,7 +10,7 @@ public class ProductExceptSelf {
             int product = 1;
 
             for (int j = 0; j < n; j++) {
-                if (i != j) {
+                if (arr[i] != arr[j]) {
                     product *= arr[j];
                 }
             }

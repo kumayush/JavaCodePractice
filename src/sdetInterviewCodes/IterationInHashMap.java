@@ -27,6 +27,11 @@ public class IterationInHashMap {
 Entry <String, String> entry=	map_entry.next();
 
 System.out.println("key: "+entry.getKey()+"   "+"value: "+entry.getValue());
+
+//method3
+for (Entry <String, String>en: hash_map.entrySet()) {
+	System.out.println("key: "+en.getKey()+"   "+"value: "+en.getValue());
+}
 		}
 	}
 

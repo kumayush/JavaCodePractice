@@ -8,8 +8,8 @@ public class ExcelColumnName {
             n--; 
             int remainder = n % 26;
             char letter = (char) ('A' + remainder);
-            //result.insert(0, letter);
-            result.append(letter);
+            result.insert(0, letter);
+           // result.append(letter);
             n = n / 26;
         }
 
@@ -17,9 +17,10 @@ public class ExcelColumnName {
     }
 
     public static void main(String[] args) {
-        System.out.println("Column name for 260: " + getColumnName(260)); // ZI
-        System.out.println("Column name for 27: " + getColumnName(27)); // AA
-        System.out.println("Column name for 52: " + getColumnName(52)); // AZ
-        System.out.println("Column name for 53: " + getColumnName(53)); // BA
+        System.out.println("Column name for 315: " + getColumnName(315)); 
+        System.out.println("Column name for 27: " + getColumnName(27));
+        System.out.println("Column name for 52: " + getColumnName(52)); 
+        System.out.println("Column name for 53: " + getColumnName(53));
+        System.out.println("Column name for 54: " + getColumnName(54));
     }
 }

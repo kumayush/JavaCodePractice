@@ -32,7 +32,8 @@ public class StringPractice {
 		System.out.println(object.length());
 		for(int i=object.length()-1;i>=0;i--) {
 			
-			String Characters=Character.toString(object.charAt(i));
+			//String Characters=Character.toString(object.charAt(i));
+			char Characters=object.charAt(i);
 			empty=empty+Characters;
 			
 		}
@@ -109,6 +110,10 @@ public class StringPractice {
 		//replaceStringAtIndex();
 		String result=removeTrailingZeroes("ayus10100000");
 		System.out.println("final string is "+ result);
+		
+		
+		reverseString2();
+		
 	}
 	}
 
