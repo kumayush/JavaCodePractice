@@ -26,7 +26,8 @@ public static String reverseWhiteSpace(String str) {
 		}
 	}
 	
-	return String.valueOf(newArr);
+	//return String.valueOf(newArr);
+	return new String(newArr);
 	
 	
 	
@@ -37,7 +38,7 @@ public static String reverseWhiteSpace(String str) {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str="abc   de";
+		String str="  abc   de";
 		System.out.println(reverseWhiteSpace(str));
 
 	}

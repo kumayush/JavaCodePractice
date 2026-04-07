@@ -23,6 +23,6 @@ public class SubstringInMiddle {
         int leftLength = index;
         int rightLength = mainStr.length() - (index + subStr.length());
 
-        return Math.abs(leftLength - rightLength) <= 1;
+        return Math.abs(leftLength - rightLength) == 0;
     }
 }

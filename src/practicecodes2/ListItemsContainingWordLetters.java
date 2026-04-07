@@ -1,26 +1,27 @@
 package practicecodes2;
 
+import java.util.HashMap;
+
 public class ListItemsContainingWordLetters {
 
 	public static boolean checkExistence(String item,String word) {
-		int countItem[]=new int[256];
-		int countWord[]=new int[256];
-		for (int i=0;i<item.length();i++) {
-			countItem[item.charAt(i)]++;
-		}
-		for (int i=0;i<word.length();i++) {
-			countWord[word.charAt(i)]++;
-		}
-		
-		for (int i=0;i<256;i++) {
-			if( countWord[i]>countItem[i]) {
-				return false;
-			}
-		}
-		
-		return true;
-		
-	}
+		 HashMap<Character, Integer> map = new HashMap<>();
+
+	        // Count characters of item
+	        for (char c : item.toCharArray()) {
+	            map.put(c, map.getOrDefault(c, 0) + 1);
+	        }
+
+	        // Check characters of word
+	        for (char c : word.toCharArray()) {
+	            if (!map.containsKey(c) || map.get(c) == 0) {
+	                return false;
+	            }
+	            map.put(c, map.get(c) - 1); // reduce count
+	        }
+
+	        return true;
+	    }
 	public static void main(String[] args) {
 		String[] items = {"rabbit", "bribe", "dog"};
         String word = "bib";

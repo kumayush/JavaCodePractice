@@ -11,7 +11,7 @@ public class EvenNumbersRecursive {
             return; // Base case: stop recursion when currentNumber exceeds 100
         }
 
-        if (currentNumber % 2 == 0) {
+       if (currentNumber % 2 == 0) {
             System.out.println(currentNumber); // Print if it's an even number
         }
 

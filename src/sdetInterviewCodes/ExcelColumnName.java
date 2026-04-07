@@ -18,7 +18,7 @@ public class ExcelColumnName {
 
     public static void main(String[] args) {
         System.out.println("Column name for 315: " + getColumnName(315)); 
-        System.out.println("Column name for 27: " + getColumnName(27));
+        System.out.println("Column name for 28: " + getColumnName(28));
         System.out.println("Column name for 52: " + getColumnName(52)); 
         System.out.println("Column name for 53: " + getColumnName(53));
         System.out.println("Column name for 54: " + getColumnName(54));
